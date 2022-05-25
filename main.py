@@ -1,7 +1,7 @@
 from root_finding import NewtonMethod
 
 while True:
-    print('Newton method:\n')
+    print('Newton method:')
 
     print('Enter the function\'s symbol except (q, Q) or enter (q, Q) to exit:')
     function_symbol = input()
@@ -19,4 +19,6 @@ while True:
 
     print("Starting newton's method:")
     solver.newtons_method(initial_point)
-    print('\n')
+    print("Starting newton's optimization method:")
+    solver.newtons_optimization_method(initial_point)
+    print()
